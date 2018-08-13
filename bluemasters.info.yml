@@ -1,0 +1,29 @@
+name: bluemasters
+description: 'Bluemasters theme in Drupal 8'
+version: VERSION
+core: 8.x
+engine: twig
+regions:
+   header: 'Header'
+   search_area: 'Search area'
+   highlighted: 'Highlighted'
+   navigation: 'navigation'
+   content: 'Content'
+   sidebar_first: 'Sidebar First'
+   banner: 'Banner'
+   home_area_1: 'Home area 1'
+   home_area_2: 'Home area 2'
+   home_area_3: 'Home area 3'
+   home_area_3_b: 'Home area 3 b'
+   footer_left_1: 'Footer left 1'
+   footer_left_2: 'Footer left 2'
+   footer_center: 'Footer center'
+   footer_right: 'Footer right'
+   footer: 'Footer'
+   help: 'Help'
+   page_top: 'Page top'
+   page_bottom: 'Page bottom'
+type: theme
+libraries:
+  - bluemasters/global-styling
+  - bluemasters/owl-carousel

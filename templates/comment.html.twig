@@ -1,0 +1,22 @@
+<div class="Comment-section-wrapper"{{ attributes }}>
+  <div class="clearfix">
+    <span class="submitted">{{ submitted }}</span>
+  {% if new  %}
+    <span class="new"></span>
+  {% endif %}
+  {{ picture }}
+    {{ title_prefix }}
+    <h3{{ title_attributes }}>{{ title }}</h3>
+    {{ title_suffix }}
+    <div class="content"{{ content_attributes }}>
+      {{ content|without('links') }} {{ content }}
+      {% if signature  %}
+      <div class="clearfix">
+        <div>—</div>
+        {{ signature }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {{ content links }}
+</div>

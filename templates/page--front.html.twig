@@ -1,0 +1,163 @@
+<div id="page">
+
+  <!--header-top-->
+  <div id="header-top">
+    <div id="header-top-inside" class="clearfix">
+
+      <!--header-top-inside-left-->
+      <div id="header-top-inside-left">{{ page.header }}</div>
+      <!--EOF:header-top-inside-left-->
+
+      <!--header-top-inside-left-feed-->
+      <div id="header-top-inside-left-feed">
+        <div id="topSocial">
+          <ul>
+            <li>
+              <a class="twitter" href="http://twitter.com/morethanthemes" title="Follow Us on Twitter!"></a>
+            </li>
+            <li>
+              <a class="facebook" href="http://www.facebook.com/pages/More-than-just-themes/194842423863081" title="Join Us on Facebook!"></a>
+            </li>
+            <li>
+              <a class="rss" title="Subcribe to Our RSS Feed" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--EOF:header-top-inside-left-feed-->
+
+      <!--header-top-inside-left-right-->
+      <div id="header-top-inside-right">{{ page.search_area }}</div>
+      <!--EOF:header-top-inside-left-right-->
+
+    </div>
+  </div>
+  <!--EOF:header-top-->
+
+  <div id="wrapper">
+
+    <!--header-->
+    <div id="header" class="clearfix">
+
+      <!--logo-floater-->
+      <div id="logo-floater">
+        {% if logo %}
+          <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}">
+            <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+          </a>
+        {% endif %}
+
+        {% if site_name or site_slogan %}
+          <div class="clearfix">
+            {% if site_name %}
+              <span id="site-name">
+                <a href="/home" title="{{ 'Home'|t }}">{{ site_name }}</a>
+              </span>
+            {% endif %}
+
+            {% if site_slogan %}
+              <span id="slogan">{{ site_slogan }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div id="banner">
+      <div id="navigation">
+        {{ page.navigation }}
+        {{ page.banner }}
+      </div>
+      <div class="main_view">
+        <div class="window">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <a href="#"><img src="themes/Bluemasters/css/images/slide-image-3.jpg"/></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="themes/Bluemasters/css/images/slide-image-2.jpg"/></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="themes/Bluemasters/css/images/slide-image-1.jpg"/></a>
+            </div>
+          </div>
+          <div class="description">
+            <div class="desc">About Bluemasters</div>
+            <div class="desc">Our Portfolio</div>
+            <div class="desc">Creation of Beaches</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--EOF:banner-->
+
+    <div id="home-blocks-area" class="clearfix">
+
+      {% if messages %}
+        <div id="console" class="clearfix">
+          {{ messages }}
+        </div>
+      {% endif %}
+
+      <div class="home-block-area first">
+        {{ page.home_area_1 }}
+      </div>
+      <div class="home-block-area">
+        {{ page.home_area_2 }}
+      </div>
+      <div class="home-block-area last">
+        {{ page.home_area_3 }}
+        {{ page.home_area_3_b }}
+      </div>
+    </div>
+
+  </div>
+  <!--EOF:wrapper-->
+
+  <!--footer-->
+  <div id="footer">
+    <div id="footer-inside" class="clearfix">
+
+      <div id="footer-left">
+        <div id="footer-left-1">
+          {{ page.footer_left_1 }}
+        </div>
+        <div id="footer-left-2">
+          {{ page.footer_left_2 }}
+        </div>
+      </div>
+
+      <div id="footer-center">
+        {{ page.footer_center }}
+      </div>
+
+      <div id="footer-right">
+        {{ page.footer_right }}
+      </div>
+
+    </div>
+  </div>
+  <!--EOF:footer-->
+
+  <!--footer-bottom-->
+  <div id="footer-bottom">
+    <div id="footer-bottom-inside" class="clearfix">
+      <div id="footer-bottom-inside-left">
+        {{ page.footer }}
+      </div>
+      <div id="footer-bottom-inside-right">
+      </div>
+      <div class="credits-container">Ported to Drupal for the Open Source Community by
+        <a href="http://www.drupalizing.com">Drupalizing</a>, a Project of
+        <a href="http://www.morethanthemes.com">More than Themes</a>
+      </div>
+    </div>
+    <div class="credits-container clearfix">
+      <a title="Brought To You By: www.SmashingMagazine.com" class="smashing" href="http://www.smashingmagazine.com" target="_blank">Brought to you By: www.SmashingMagazine.com</a>
+      <a title="Drupalizing" class="drupalizing" href="http://www.drupalizing.com" target="_blank">Drupalizing</a>
+    </div>
+  </div>
+  <!--EOF:footer-bottom-->
+
+</div>
+<!--EOF:page-->
